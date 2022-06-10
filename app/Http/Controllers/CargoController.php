@@ -21,7 +21,8 @@ class CargoController extends Controller
      */
     public function viewData()
     {
-        return view('view');
+        $cargos = DB::select('CALL get_cargos()');
+        return view('view', ['cargos' => $cargos]);
     }
 
     /**
