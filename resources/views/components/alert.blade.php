@@ -5,7 +5,6 @@
             {{ session()->get('success') }}
         </div>
       </div>
-    
 @endif
 
 @if (session()->has('error'))
@@ -15,5 +14,4 @@
             {{ session()->get('error') }}
         </div>
       </div>
-    
 @endif
