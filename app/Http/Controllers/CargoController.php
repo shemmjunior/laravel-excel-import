@@ -11,25 +11,26 @@ class CargoController extends Controller
     /**
      * View root page.
      */
-    public function index()
-    {
+    public function index() {
         return view('index');
     }
 
     /**
      * View imported data.
      */
-    public function viewData()
-    {
-        $cargos = DB::select('CALL get_cargos()');
+    public function viewData() {
+        $cargos = $this->getCargos();
         return view('view', ['cargos' => $cargos]);
+    }
+
+    public function getCargos() {
+        return DB::select('CALL get_cargos()');
     }
 
     /**
      * Import data from Excel file.
      */
-    public function importExcel(Request $request)
-    {
+    public function importExcel(Request $request) {
         /** If request has a file continue with import process otherwise return an error */
         if ($request->hasFile('excel-file')) {
             
