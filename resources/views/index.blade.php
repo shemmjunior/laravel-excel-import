@@ -1,7 +1,7 @@
 <x-layout>
     <div class="flex justify-center items-center h-screen">
         <div class="mx-44">
-            <form method="POST">
+            <form method="POST" action="/import" enctype="multipart/form-data">
                 @csrf
                 <div class="grid grid-cols-2 gap-4">
                     <div>
