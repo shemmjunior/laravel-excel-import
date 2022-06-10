@@ -19,7 +19,9 @@ This project has been made using Laravel 9.11. PHP environment is required to ru
 7. You are done! Start the local development server using `php artisan serve` and you should be able to access the server at http://localhost:8000
 
 ### Accessing the Web Service
-After you have imported an excel sheet, the endpoint can be accessed on `http://localhost:8000/api/cargos`
+After you have imported an excel sheet, the endpoint can be accessed on `http://localhost:8000/api/cargos`. Below is a snapshot of postman api call.
+
+![alt text](https://github.com/shemmjunior/ubx-assignment/blob/master/api.png)
 
 ## Code overview
 
