@@ -1,7 +1,9 @@
 ## Introduction
 This repo performs a functionality of extracting a provided excel file rows and directly inserts the data into mysql database using transaction process together with stored procedures. A simple interface has been built to handle the whole process.
 
-The following is a process flow of how the data is being extracted and stored into mysql database
+The following is an image describing a flow of how the data is being extracted and stored into mysql database:
+
+![alt text](https://github.com/shemmjunior/ubx-assignment/blob/master/flowchart.png)
 
 ## Getting Started
 
@@ -24,6 +26,7 @@ After you have imported an excel sheet, the endpoint can be accessed on `http://
 ### Dependencies
 
 - [fast-excel](https://github.com/rap2hpoutre/fast-excel) - For extracting excel sheet rows from an excel file
+
 
 
 
