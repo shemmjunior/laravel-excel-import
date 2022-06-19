@@ -10,6 +10,7 @@
         "laravel/framework": "^9.11",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
+        "owen-it/laravel-auditing": "^13.0",
         "rap2hpoutre/fast-excel": "^3.2"
     },
     "require-dev": {

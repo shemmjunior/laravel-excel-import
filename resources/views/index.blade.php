@@ -1,4 +1,5 @@
 <x-layout>
+      
     <div class="flex  justify-center items-center h-screen">
         <div class="rounded-lg border border-gray-200 shadow-md p-6 mx-4 lg:mx-44 md:mx-24 sm:mx-8">
             <form method="POST" action="/import" enctype="multipart/form-data">
