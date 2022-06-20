@@ -7,6 +7,7 @@
     <title>UBX Assignment</title>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <script src="//unpkg.com/alpinejs" defer></script>
+    @livewireStyles
 </head>
 
 <body>
@@ -43,6 +44,7 @@
     </nav>
     {{ $slot }}
     <x-alert />
+    @livewireScripts
 </body>
 
 </html>

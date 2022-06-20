@@ -1,6 +1,7 @@
 <x-layout>
     @unless(count($cargos) == 0)
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg lg:mx-24">
+            <livewire:counter />
             <table class="w-full text-sm text-left dark:text-gray-400">
                 <thead class="text-xs uppercase bg-gray-50 dark:bg-gray-700">
                     <tr>
