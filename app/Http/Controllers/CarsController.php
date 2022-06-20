@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class CarsController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware('auth');
+    }
     //
     public function createCar() {
         return view('cars.create');

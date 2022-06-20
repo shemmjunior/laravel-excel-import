@@ -6,8 +6,8 @@ use App\Http\Controllers\CargoController;
 use App\Http\Controllers\CarsController;
 
 /** Authentication routes */
-Route::get('/register', [UserController::class, 'register']);
 Route::get('/', [UserController::class, 'login']);
+Route::get('/register', [UserController::class, 'register']);
 Route::post('/authenticate', [UserController::class, 'authenticate']);
 Route::post('/signup', [UserController::class, 'signup']);
 Route::post('/logout', [UserController::class, 'logout']);

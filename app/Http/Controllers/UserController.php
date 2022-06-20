@@ -8,6 +8,7 @@ use Illuminate\Validation\Rule;
 
 class UserController extends Controller
 {
+
     public function register() {
         return view('auth.register');
     }
@@ -53,11 +54,11 @@ class UserController extends Controller
         // Logout User
         public function logout(Request $request) {
             auth()->logout();
-    
+
             $request->session()->invalidate();
             $request->session()->regenerateToken();
-    
+
             return redirect('/')->with('success', 'You have been logged out!');
-    
+
         }
 }
